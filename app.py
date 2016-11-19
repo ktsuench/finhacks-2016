@@ -9,10 +9,6 @@ app = Flask(__name__)
 def hello():
 	return render_template('index.html')
 
-@app.route('/test')
-def test():
-	return render_template('index.html')
-
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
