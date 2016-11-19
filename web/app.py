@@ -7,8 +7,11 @@ import string
 app = Flask(__name__)
 @app.route('/')
 def hello():
-	episodes_list = [{'num': '1', 'src': "ep1"}, {'num': '2', 'src': "ep2"}, {'num': '3', 'src': "ep3"}, {'num': '4', 'src': "ep4"}, {'num': '5', 'src': "ep5"}]
-	return render_template('test.html', episodes=episodes_list)
+	return render_template('index.html')
+
+@app.route('/test')
+def test():
+	return render_template('test.html')
 
 
 if __name__ == '__main__':
