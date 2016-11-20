@@ -8,6 +8,7 @@ import urllib
 import urllib.request
 import urllib.error
 import json
+import calendar
 
 app = Flask(__name__)
 
@@ -59,7 +60,7 @@ def apicall():
         if(ref[i][3] < minN):
             res = ref[i][0]
     
-    return render_template('index.html', result=res)
+    return render_template('index.html', result=calendar.month_name[int(res)])
 
 @app.route('/test')
 def test():
