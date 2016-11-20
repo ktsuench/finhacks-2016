@@ -18,7 +18,7 @@ def hello():
 
 @app.route('/result', methods=["POST"])
 def apicall():
-    id = "asus-geforce-gtx750ti-oc-2gd5-performance-graphics-gddr5-2gb"
+    id = request.POST["id"]
     chk = []
     data = {
         "Inputs": {
