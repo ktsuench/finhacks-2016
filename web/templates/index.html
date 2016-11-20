@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Future Imperfect by HTML5 UP</title>
+		<title>Forecost - RU Thinking</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -39,17 +39,25 @@
 									</div>
 								</header>
 								<!-- CHECK THIS -->
-									<select> 
-											<option value = "product1">Asus Geforce GTX 750i</option>
-											<option value = "product2">Black Decker Lithium Power Drill</option>
-											<option value = "product3">Nintendo Enterainment System - Classic Edition</option>
-											<option value = "product4">2016 Honda Civic</option>
-											<option value = "product5">2016 Toyota Camry</option>
+								<form method="POST" action="/result">
+									<select name = "id"> 
+											<option value = "asus-geforce-gtx750ti-oc-2gd5-performance-graphics-gddr5-2gb">Asus Geforce GTX 750i</option>
+											<option value = "black-decker-ldx120px-lithium-drill-and-project-kit-20-volt">Black Decker Lithium Power Drill</option>
+											<option value = "nintendo-entertainment-system-nes-classic-edition">Nintendo Enterainment System - Classic Edition</option>
+											<option value = "honda-civic-2015">2016 Honda Civic</option>
+											<option value = "toyota-camry-2015">2016 Toyota Camry</option>
+											<option value = "apple-mac-book">Apple Mac Book</option>
 									</select>
-									</br>
-								<a href="#" class="image featured"><img src="static/images/pic01.jpg" alt="" /></a>
+									<br>
+									<input type = "submit" value = "Get Month" />
+								</form>
+								<br>
+								{% if result %}
+									<p>Buy the item in <h3>{{ result }}</h3></p>
+								{% endif %}
+								<!--<a href="#" class="image featured"><img src="static/images/pic01.jpg" alt="" /></a>
 								<p> Visually, you'll see the different graphs to determine your future prices. By the graph, you'll see the future value based on the web's past values.
-								</p>
+								</p>-->
 							</article>
 					</div>
 
