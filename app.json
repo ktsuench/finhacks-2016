@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
-  "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
-  "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ]
+  "name": "ForeCost",
+  "description": "Uses historical price data to predict when the next best time period would be to buy a product.",
+  "image": "",
+  "repository": "https://github.com/ktsuench/finhacks-2016",
+  "keywords": ["python", "flask" ],
+  "addons": [ "flask" ]
 }
